@@ -4,7 +4,7 @@ import SideBarMenu from "./SideBarMenu.astro";
 
 // 1. IMPORT GAMBARNYA
 // Pastikan nama file "profil.jpeg" atau "profile.jpeg" sesuai nama aslinya di folder assets
-import profilImg from "../assets/profil.jpeg";
+import profilImg from "../assets/profile.jpeg";
 
 const { sideBarActiveItemID } = Astro.props;
 ---
@@ -21,7 +21,7 @@ const { sideBarActiveItemID } = Astro.props;
                 format="webp" 
                 width={300} 
                 height={300} 
-                src={profilImg} 
+                src={profilImg.src} 
                 alt="Profile image" 
             />
           </div>
