@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
+import { image } from 'astro:assets'
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
@@ -33,28 +34,28 @@ const last_posts = posts.slice(0, 3);
 
   <HorizontalCard
     title="Proposal"
-    img="/public/proposal.png"
+    img="/proposal.png"
     desc="Kritik Berbisik: Peran Akun Anonim di Twitter di Tengah Budaya dan Iklim Demokrasi Indonesia"
     url="https://docs.google.com/document/d/1-iuFqe6mJYXtwZT1j1MGLLlLX5EbY-ysoXM8vZMHeg8/edit?usp=sharing"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Podcast"
-    img="/public/podcast.png"
+    img="/podcast.png"
     desc="Video Podcast terkait tema Kritik Berbisik"
     url="https://drive.google.com/file/d/1omGDVsT2Ry88iTVypMLdgC9mW-o2H6sm/view?usp=drive_link"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Infografis Edukatif"
-    img="/public/infografis.png"
+    img="/infografis.png"
     desc="Infografis mengenai topik Kritik Berbisik"
     url="https://drive.google.com/file/d/1IaFKNyEIJ3jgoX5OIeJtte51y_oUn4DH/view?usp=sharing"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Laporan Penelitian"
-    img="/public/laporan.png"
+    img="/laporan.png"
     desc="Laporan Akhir dari project Kritik Berbisik"
     url="https://docs.google.com/document/d/19BO80y85_PEynJCihpzup0idGlbPMfT5Q6GYOquF50A/edit?usp=sharing"
   />
