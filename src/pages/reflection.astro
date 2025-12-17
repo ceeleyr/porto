@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import papImg from "../assets/pap.png";
 ---
 
 <BaseLayout title="Jurnal Refleksi | Ceeley" sideBarActiveItemID="refleksi">
@@ -103,11 +104,16 @@ import BaseLayout from "../layouts/BaseLayout.astro";
     </p>
 
     <div class="mt-12 mb-5 text-center">
-      <img src="/assets/pap.png" alt="Bukti catatan dan materi pembelajaran" class="rounded-lg shadow-md mx-auto w-full max-w-2xl" />
+      <img 
+        src={papImg.src} 
+        alt="Bukti catatan dan materi pembelajaran" 
+        class="rounded-lg shadow-md mx-auto w-full max-w-2xl" 
+      />
       
       <p class="text-sm text-gray-600 italic mt-3">
         Lampiran bukti perjalanan belajar ini, biar nggak dikira ChatGPT doang :p
-        <span class="font-normal">The urge to actually enroll in a philosophy major HAHAH</span>
+        <br />
+        <span class="font-normal block mt-1">The urge to actually enroll in a philosophy major HAHAH</span>
       </p>
     </div>
     </div>
